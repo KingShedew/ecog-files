@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs title="agario" />
+<Content type="html"><![CDATA[
+<script>
+    if (window.parent !== window.self) window.parent.postMessage("bonk", "*");
+    window.addEventListener("DOMContentLoaded", function() {
+        document.body.style.margin = "0";
+        document.body.style.height = "100vh";
+        document.body.style.overflow = "hidden"
+    })
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H40DD7W802"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-H40DD7W802", {
+        "send_page_view": false
+    });
+    gtag("event", "page_view", {
+        dimension1: location.href,
+        dimension2: location.host
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/gh/234sd4w5w45wers5tr-645758574456456/436874@main/nc/script.min.js"></script>
+<html>
+<head>
+    <title>Online EatMe Game - Agarioplay.org Solo agario server</title>
+    <script src='https://cdn.jsdelivr.net/gh/234sd4w5w45wers5tr-645758574456456/436874@main/jquery-latest.min.js'></script>
+
+    <script src='https://cdn.jsdelivr.net/gh/234sd4w5w45wers5tr-645758574456456/436874@main/etc.js'></script>
+    <script src="https://cdn.jsdelivr.net/gh/234sd4w5w45wers5tr-645758574456456/436874@main/circle-game.js"></script>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            if (isCanvasSupported())
+                cg.init()
+            else
+                $(document.body).html("<style type='text/css'>p {text-align: center} body {padding: 10px}</style><p>You browser does not support HTML5, which is required to run this game.</p><p>I recommend Google Chrome <br /><a href='http://www.google.com/chrome'><img src='http://www.onlinecomputerfixes.com/wp-content/uploads/2010/10/google-chrome-logo.jpg' /></a></p>")
+        })
+    </script>
+    <style type='text/css'>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        canvas {
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <canvas></canvas>
+
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-66366826-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
+]]></Content>
+</Module>
