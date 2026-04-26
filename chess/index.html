@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chess Game</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chess Game</title>
 
-<style>
-#button {
-  display: none;
-}
+	<style>
+		#button {
+			display: none;
+		}
 
-.imgb_vis {
-  animation: imgb-animation 7s linear;
-}
+		.imgb_vis {
+			animation: imgb-animation 7s linear;
+		}
 
-@keyframes imgb-animation {
-  10% { transform: translateX(0); }
-  20% { transform: translateX(100px); }
-  90% { transform: translateX(100px); }
-  100% { transform: translateX(0); }
-}
-</style>
+		@keyframes imgb-animation {
+			10% {
+				transform: translateX(0);
+			}
+
+			20% {
+				transform: translateX(100px);
+			}
+
+			90% {
+				transform: translateX(100px);
+			}
+
+			100% {
+				transform: translateX(0);
+			}
+		}
+	</style>
 </head>
 
 <body>
 
-<div id="waflashContainer">
-  <canvas id="canvas" width="800" height="600"></canvas>
-  <div id="waflashStatus" style="display:none;">Playing..</div>
-</div>
+	<div id="waflashContainer">
+		<canvas id="canvas" width="800" height="600"></canvas>
+		<div id="waflashStatus" style="display:none;">Playing..</div>
+	</div>
 
-<script type="module">
-const gameConfig = {
+	<script type="module">
+		const gameConfig = {
   swfUrl: "https://cdn.jsdelivr.net/gh/KingShedew/ecog-files@main/chess/462874.dat"
 };
 
@@ -41,4 +53,5 @@ createWaflash(gameConfig.swfUrl, {});
 </script>
 
 </body>
+
 </html>
